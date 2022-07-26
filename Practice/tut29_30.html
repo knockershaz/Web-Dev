@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            background-color: aqua;
+            text-align: center;
+            display: none;
+        }
+        @media only screen and (max-width: 330px)
+        {
+            #first{
+        
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media only screen and (min-width: 330px) and (max-width : 500px)
+        {
+            #second{
+        
+                display: block;
+                background-color: rgb(23, 158, 179);
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width : 800px)
+        {
+            #third{
+        
+                display: block;
+                background-color: pink;
+            }
+        }
+        @media only screen and (min-width: 800px)
+        {
+            #fourth{
+        
+                display: block;
+                background-color: rgb(12, 195, 43);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1  class="text" id="first">I am Phone</h1>
+        <h1 class="text" id="second">I am iPad</h1>
+        <h1 class="text" id="third">I am laptop</h1>
+        <h1 class="text" id="fourth">I am widescreen pc</h1>
+    </div>
+</body>
+</html>
