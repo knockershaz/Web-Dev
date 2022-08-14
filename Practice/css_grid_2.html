@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid1</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+            'nav nav nav nav '
+            'section section section aside'
+            'footer footer footer footer ';
+            grid-gap: 2rem;
+
+        }
+
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+        .item{
+            color: black;
+            background-color: blanchedalmond;
+            border: 2px solid black ;
+            padding: 12px 24px;
+        }
+
+        @media only screen and (max-width:400px){
+            body{
+            background-color: blue;
+            }
+            aside{
+                display: none;
+            }
+            .container{
+            display: grid;
+            grid-template-areas:
+            'nav nav nav nav '
+            'section section section section'
+            'footer footer footer footer ';
+            grid-gap: 2rem;
+
+        }
+        span{
+            display: block;
+        }
+        }
+        @media only screen and (min-width:400px) and (max-width:1200px){
+            body{
+            background-color: green;
+            }
+            aside{
+                display: none;
+            }
+            .container{
+            display: grid;
+            grid-template-areas:
+            'nav nav nav nav '
+            'section section section section'
+            'footer footer footer footer ';
+            grid-gap: 2rem;
+
+        }
+        span{
+            display: block;
+        }
+        }
+        @media only screen and (min-width:1200px) and (max-width:2000px){
+            body{
+            background-color: yellow;
+            }
+        }
+        @media only screen and (min-width:2000px){
+            body{
+            background-color: pink ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="item">
+            <span>Home</span><span>About UDs</span><span>Services</span><span>Contact Us</span>
+        </nav>
+        <section class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque mollitia cupiditate dolorum earum doloribus voluptatum ullam in, eaque officia optio deleniti quo quaerat iste placeat ipsa molestiae architecto, ea blanditiis. Repellendus facere voluptas adipisci Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor fuga, nihil unde provident maxime molestiae laborum minima? Non, tempora iusto! Accusamus nisi nulla itaque veritatis quae est fuga, odit autem porro vitae, quam quod ab? Perferendis nobis fugit, quidem ipsum ducimus sapiente, nam consectetur, non ex ipsam iure. Eius voluptatibus laboriosam nulla aut! Fugiat, obcaecati! Temporibus alias assumenda voluptatum dicta illum aspernatur harum cum nesciunt dignissimos laudantium nam, qui magni dolores, illo, dolorem quod eius nisi. Soluta enim dolorum nulla ad dicta inventore dolores deserunt laudantium consectetur ab facilis, autem, explicabo expedita atque illo? Expedita nobis praesentium rem eius unde magni, sed aliquid, odit doloremque maxime mollitia aliquam facilis. Nobis modi voluptatibus dolorum earum beatae eos obcaecati ducimus odio iure laudantium. Aspernatur vitae, commodi expedita molestias eveniet, fugiat deleniti quibusdam libero repudiandae facere sequi consequuntur sit quidem sed praesentium minima perspiciatis! Maxime corporis dicta magnam, praesentium voluptate ipsam quasi! Rem modi possimus nisi? Eius rem sit vero. Similique recusandae optio minus in, officiis ut ipsum obcaecati perferendis magnam cumque labore quia veniam laboriosam fugit quibusdam magni. Molestias labore perferendis voluptatibus quam nihil porro aliquid beatae voluptas architecto aspernatur. Sed soluta facilis qui vitae, enim beatae. Sunt, magni possimus! Vitae doloremque sit, explicabo vel, dolorem ducimus reiciendis tenetur quia provident saepe eos. Assumenda in autem distinctio dicta voluptates culpa hic voluptatibus unde tempore inventore molestiae corporis aperiam, maiores aliquid dolorum esse? Veniam, unde? Quisquam quaerat nihil quod, quos harum cumque consequatur expedita eos et accusamus vero, tempora recusandae hic ab ut! Aliquid earum incidunt quasi iure nisi totam est eligendi deserunt tempora in, praesentium optio maxime necessitatibus. Necessitatibus nostrum magnam dolor aperiam, similique mollitia quibusdam, laborum perferendis possimus voluptates officia ipsam accusamus nemo at quis quaerat cum corporis, harum magni vel aut neque! Excepturi sequi ut nostrum cupiditate fugit assumenda, ullam distinctio adipisci vel, impedit ab dolorem, nihil libero! Esse amet nihil voluptates maxime illo blanditiis doloremque. In adipisci recusandae sapiente ipsum aspernatur, mollitia iste facilis. Sequi cum tempore eligendi quas assumenda harum doloribus aliquid rerum quo rem autem, odit nostrum asperiores corrupti minus tenetur expedita optio ad? Rerum eum mollitia voluptatem veritatis voluptatibus ad harum error, quasi quam non cum, nulla quisquam quae illum eius molestias recusandae minima distinctio sunt nisi? Vitae totam et repudiandae facilis ea? Dolores deleniti, neque assumenda magni facilis officiis ipsam sequi et beatae, nulla, architecto molestias quis. Laboriosam ad excepturi blanditiis, iste repellat quae unde.</p>
+        </section>
+        <aside class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus? Cum, rerum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti vitae hic culpa eum, reprehenderit magnam obcaecati quasi? Soluta, error illum? Tenetur ut animi magnam doloremque obcaecati nobis suscipit ab perferendis maiores, dicta, consequatur quisquam perspiciatis dolores reprehenderit esse necessitatibus, libero aliquid ea excepturi aut. Molestias cumque harum nam quos aspernatur accusantium praesentium at eius ut dignissimos eaque fugit libero dolore, eos nobis ducimus illo similique quae repellendus rerum impedit. Quam corrupti molestiae atque dolore veniam et adipisci! Eaque est nulla, tempora debitis quasi modi ipsa possimus ipsam. Explicabo id tenetur accusantium neque nobis, aut deleniti quod eligendi sequi eos veritatis minima culpa provident voluptatem! Omnis eius exercitationem assumenda, facere itaque culpa explicabo aliquam illo numquam? Totam voluptas corrupti eligendi, dolores aliquam magni soluta natus deserunt excepturi quis aperiam et in velit neque sapiente tenetur quaerat dolor maxime vitae eum omnis quidem labore quia a? Eaque vel, saepe et dignissimos, cupiditate tempora cum voluptate quo, pariatur officia laborum beatae asperiores sunt corporis magni quaerat quisquam non corrupti perspiciatis nesciunt assumenda laudantium necessitatibus. Ut, fugiat tenetur nesciunt impedit obcaecati dolorem nihil animi libero aspernatur nostrum ipsa maiores cumque quae, enim voluptas ad corrupti inventore provident illum incidunt eos nemo dolore assumenda. Corporis quibusdam sunt sed explicabo dolor aperiam tempora cum pariatur nostrum minima, exercitationem rerum eaque aliquid repellat perferendis facilis debitis animi maiores temporibus. Quis necessitatibus, suscipit deleniti exercitationem enim vel, laudantium consectetur dignissimos ex labore, aliquid unde nostrum architecto eos recusandae saepe quae iste. Tenetur ad magnam sed hic reiciendis iste illum corporis placeat quasi. Ab, perspiciatis voluptatum mollitia veritatis, minima dolore quibusdam magnam esse sit commodi placeat nulla obcaecati error voluptatibus! Itaque quis nulla voluptatibus reiciendis explicabo iste, alias inventore sunt harum quaerat error sequi, dolor eius excepturi at ducimus tenetur iure? Enim quaerat culpa assumenda necessitatibus, alias quia?</p>
+        </aside>
+        <footer class="item">Copyright MyWebsite.com</footer>
+    </div>
+</body>
+</html>

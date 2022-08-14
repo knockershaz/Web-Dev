@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nostrum odit non! Deserunt excepturi distinctio, provident iure magnam molestiae earum debitis reprehenderit nulla voluptatem explicabo obcaecati quas atque vero at quidem ipsum laudantium nesciunt velit dicta esse a? Dignissimos, animi ex! Numquam corporis, cum quos quidem expedita quia nam obcaecati ipsum inventore illo esse laudantium cumque? Fugiat, veritatis perferendis! Odio, ducimus. Repellat neque labore delectus commodi odit, sed nam. Eos facere ab, quos amet aspernatur, eligendi veritatis repellat deleniti mollitia, error labore recusandae quas eum. Ullam rerum atque perspiciatis optio, magni vitae mollitia enim iure, sint, velit ducimus quaerat voluptatem illum error ipsum totam sunt vel saepe architecto eaque. Suscipit distinctio, praesentium assumenda ducimus illum optio dicta alias rem quod velit corporis architecto nemo animi sint. Maxime dolorum mollitia asperiores, repudiandae dolore consequatur odit ad excepturi iure id at enim odio similique impedit doloremque optio labore delectus tenetur ex laboriosam.
+        </p>
+    </div>
+    <button id="btn" onclick="toggle()">Show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run()    {
+                console.log("mouse Inside");
+        })
+
+        function toggle()
+        {
+            let para = document.getElementById('para');
+            if(para.style.display!='none')
+            {
+                para.style.display='none';
+            }
+            else
+            {
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
